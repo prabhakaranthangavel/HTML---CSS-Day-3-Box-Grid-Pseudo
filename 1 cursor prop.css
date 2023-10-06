@@ -1,0 +1,21 @@
+.h1 {
+    cursor: not-allowed;
+    text-align: center;
+    color: chartreuse;
+}
+
+.p{
+    cursor: pointer;
+    /* cursor:grab ; */
+    /* cursor: not-allowed; */
+    /* cursor: crosshair;   */
+    /* cursor: help; */
+    text-align: center;
+    color: aqua;
+}
+
+.p1{
+    cursor: grab;
+    text-align: center;
+    color: red;
+}

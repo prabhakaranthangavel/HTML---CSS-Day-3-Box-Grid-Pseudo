@@ -1,0 +1,109 @@
+/* Example for PSEUDO PROPERTIES:
+
+/* ===>நம்முடைய link மற்றும் tag ஐ customize செய்ய பயன்படுவதுதான் pseudo class ஆகும். */
+
+/* ===>அதற்கான PROPERTIES : (1)link  (2)active  (3)visited   (4)hover */
+
+/* ===>Example: */
+
+/* </body>
+    <a href="https://instagram.com" target="_blank">Click Here To Go for Instagram</a> 
+</body> */
+
+
+/* a {
+    text-decoration: none;
+    font-size: x-large;
+} */
+
+
+/* ஒரு link ஐ தொடுவதற்கு முன் எப்படி இருக்க வேண்டும் என்று கொடுக்கிறோம்? */
+/* ===>link property */
+/* a:link {
+    background-color: black;
+} */
+
+
+/* ஒரு link ஐ தொடுவதற்கு பிறகு எப்படி இருக்க வேண்டும் என்று கொடுக்கிறோம்? */
+/* ===>active property */
+/* a:active {
+    color: brown;
+    background-color: aqua;
+} */
+
+
+/* ஒரு link ஐ நாம் பார்த்து விட்டோமா என்பதை கண்டுபிடிக்க */
+/* ===>visited property  */
+/* a:visited {
+    color: aqua;
+    background-color: blueviolet;
+} */
+
+/* ஒரு link க்கு அருகில் mouse செல்லும்போது ஏற்படக்கூடிய மாற்றங்கள் */
+/* ===>hover property  */
+/* a:hover {
+    color: chartreuse;
+    background-color: black;
+    zoom: 150%;
+} */
+
+/* ************************************************** */
+
+/* ===>நம்முடைய text யும் customize செய்யலாம். */
+
+/* ===>அதற்கான PROPERTIES : (1)focus  (2)active  (3)visited   (4)hover */
+
+
+/* ===>Example: */
+
+/* </body>
+    <a href="https://instagram.com" target="_blank">Click Here To Go for Instagram</a>
+    <input type="text" class="input" />===>BOX ஒன்று உருவாகும். 
+</body> */
+
+/* .input focus {
+    color: red;
+    background color: black
+} */
+
+/* Box ஐ கிளிக் செய்யும்போது Box ன் background மாறுகிறது. உள்ளே type பண்ணும் போது text ன் color ம் மாறுபடுகிறது. */
+
+/* ********************************************************************************************* */
+
+/* Example for CHILD ELEMENTS: */
+
+/* p {
+    text-align: start;
+} */
+
+/* div {
+    background-color: red;
+} */
+
+
+/* p:first-child{
+    background-color: black;
+    color: aqua;
+    text-align: start;
+}  */
+
+/* p:last-child{
+    background-color: black;
+    color: aqua;
+    text-align: start;
+}  */
+
+
+/* p:nth-child(1){
+    background-color: black;
+    color: aqua;
+    text-align: start;
+}  */
+
+/* div>p:nth-child(3){
+    background-color: black;
+    color: aqua;
+    text-align: start;
+}  */
+
+/* ********************************************************************************************* */

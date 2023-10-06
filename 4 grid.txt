@@ -1,0 +1,47 @@
+GRID:
+
+===>div,section,article இதற்குள் கொடுக்கும் inputs ஆனது சரியான முறையில்(perfect) align ஆகி வருவதற்கு grid ஐ பயன்படுத்துகிறோம்.
+
+===>grid = coloumn
+    flex = row
+
+===>display:grid என்று கொடுத்தவுடன் தான் grid ன் உடைய properties ஆனது unlock ஆகும்.
+
+===>grid-template-columns: auto auto auto auto என்று கொடுக்கும் போது coloumn வாரியாக பிரியும்.
+    அதாவது 20 div ல் உள்ள elements களை ஆனது coloumn வாரியாக 4 ஆக பிரியும்.
+
+===>margin , padding க்கு பதிலாக gap(coloumn-gap , row-gap) ஐ பயன்படுத்தினாலும் அதே போல் output ஐ நாம் பெற முடியும்.
+
+===>grid-column-start : 1
+    grid-column-end   : 3    ===>one of the property(coloumn space ஐ எடுத்துக்கொள்ளும்)
+
+===>grid-row-start : 2
+    grid-row-end   : 5    ===>one of the property(row space ஐ எடுத்துக்கொள்ளும்)
+
+*************************************************************************************************************************
+
+FLEX:
+
+===>display: flex; என்று கொடுத்தால் content ஆனது ஒரு Row ஆக அமையும்.
+
+===>display:flex என்று கொடுத்தவுடன் flex ன் உடைய properties ஆனது unlock ஆகும்.
+
+===>சில imp properties for flex:
+
+    justify-content: baseline;
+    justify-content: center;
+    flex-direction:
+    flex-flow:wrap row
+
+    flex-wrap: wrap; என்று கொடுத்தால் border ஐ விட்டு வெளியே செல்லும் content யும் borderக்குள் சரியாக align செய்து கொடுக்கும்.
+    refer to folder images.
+
+    flex-wrap: wrap; என்று கொடுத்தவுடன் wrap ன் 2 properties ஆனது unlock ஆகும்.
+    (1)align-content: space-between;
+    (2)align-content: space-evenly;
+
+===>https://flexboxfroggy.com/
+
+===>position : https://positiondemo.netlify.app/
+
+*************************************************************************************************************************

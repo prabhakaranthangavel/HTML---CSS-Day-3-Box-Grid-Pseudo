@@ -1,0 +1,263 @@
+Contents:
+
+1.pseudo class & properties
+2.Child elements
+
+*************************************************************************************************************************
+
+1.pseudo class & properties
+
+what is pseudo class & properties?
+
+===>நம்முடைய link மற்றும் tag ஐ customize செய்ய பயன்படுவதுதான் pseudo class ஆகும்.
+
+===>அதற்கான PROPERTIES : (1)link  (2)active  (3)visited   (4)hover
+
+===>Example:
+
+    </body>
+        <a href="https://instagram.com" target="_blank"> Click Here To Go for Instagram</a>
+    </body>
+
+    a{
+        text-decoration: none;
+        font-size: x-large;
+    }
+
+
+ஒரு link ஐ தொடுவதற்கு முன் எப்படி இருக்க வேண்டும் என்று கொடுக்கிறோம்?
+===>link property
+
+    a:link{
+        background-color: black;
+    }
+
+ஒரு link ஐ தொடுவதற்கு பிறகு எப்படி இருக்க வேண்டும் என்று கொடுக்கிறோம்?
+===>active property
+
+    a:active{
+        color: brown;
+        background-color: aqua;
+    }
+
+ஒரு link ஐ நாம் பார்த்து விட்டோமா என்பதை கண்டுபிடிக்க
+===>visited property 
+
+    a:visited{
+        color: aqua;
+        background-color: blueviolet;
+    }
+
+ஒரு link க்கு அருகில் mouse செல்லும்போது ஏற்படக்கூடிய மாற்றங்கள்
+===>hover property 
+
+    a:hover{
+        color: chartreuse;
+        background-color: black;
+        zoom: 150%;
+    }
+
+                **************************************************
+
+===>நம்முடைய text யும் customize செய்யலாம்.
+
+===>அதற்கான PROPERTIES : (1)focus  (2)active  (3)visited   (4)hover
+
+
+===>Example:
+
+    </body>
+        <a href="https://instagram.com" target="_blank"> Click Here To Go for Instagram</a>
+        <input type="text" class="input"/>          ===>BOX ஒன்று உருவாகும்.
+    </body>
+
+ 
+     .input focus {
+         color:red;
+         background color:black
+        }                          
+        Box ஐ கிளிக் செய்யும்போது Box ன் background மாறுகிறது.
+        உள்ளே type பண்ணும் போது text ன் color ம் மாறுபடுகிறது.
+
+*************************************************************************************************************************
+
+2.Child elements
+
+what is Child elements?
+
+===>(1)first child     (2)last child     (3) Nth child
+
+(1)what is first child?
+
+===>first child ஆனது first p tag ல் உள்ள first paragraph யும் div க்குள் இருக்கும் அனைத்து first paragraph யும் எடுத்துக்கொள்ளும்.
+
+===>Example:
+
+    <p>This is a first child</p>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laboriosam maxime earum ratione dignissimos eos. Molestiae delectus doloremque, ad sed dolore doloribus ea quis molestias sint animi. Minima iure ex dolorem.</p>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laboriosam maxime earum ratione dignissimos eos. Molestiae delectus doloremque, ad sed dolore doloribus ea quis molestias sint animi. Minima iure ex dolorem.</p>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laboriosam maxime earum ratione dignissimos eos. Molestiae delectus doloremque, ad sed dolore doloribus ea quis molestias sint animi. Minima iure ex dolorem.</p>
+
+
+    <div>
+        <p>This is a first child</p>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laboriosam maxime earum ratione dignissimos eos. Molestiae delectus doloremque, ad sed dolore doloribus ea quis molestias sint animi. Minima iure ex dolorem.</p>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laboriosam maxime earum ratione dignissimos eos. Molestiae delectus doloremque, ad sed dolore doloribus ea quis molestias sint animi. Minima iure ex dolorem.</p>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laboriosam maxime earum ratione dignissimos eos. Molestiae delectus doloremque, ad sed dolore doloribus ea quis molestias sint animi. Minima iure ex dolorem.</p>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laboriosam maxime earum ratione dignissimos eos. Molestiae delectus doloremque, ad sed dolore doloribus ea quis molestias sint animi. Minima iure ex dolorem.</p>
+    </div>
+
+
+    <div>
+        <p>This is a first child</p>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laboriosam maxime earum ratione dignissimos eos. Molestiae delectus doloremque, ad sed dolore doloribus ea quis molestias sint animi. Minima iure ex dolorem.</p>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laboriosam maxime earum ratione dignissimos eos. Molestiae delectus doloremque, ad sed dolore doloribus ea quis molestias sint animi. Minima iure ex dolorem.</p>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laboriosam maxime earum ratione dignissimos eos. Molestiae delectus doloremque, ad sed dolore doloribus ea quis molestias sint animi. Minima iure ex dolorem.</p>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laboriosam maxime earum ratione dignissimos eos. Molestiae delectus doloremque, ad sed dolore doloribus ea quis molestias sint animi. Minima iure ex dolorem.</p>
+    </div>
+
+
+    <div>
+        <p>This is a first child</p>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laboriosam maxime earum ratione dignissimos eos. Molestiae delectus doloremque, ad sed dolore doloribus ea quis molestias sint animi. Minima iure ex dolorem.</p>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laboriosam maxime earum ratione dignissimos eos. Molestiae delectus doloremque, ad sed dolore doloribus ea quis molestias sint animi. Minima iure ex dolorem.</p>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laboriosam maxime earum ratione dignissimos eos. Molestiae delectus doloremque, ad sed dolore doloribus ea quis molestias sint animi. Minima iure ex dolorem.</p>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laboriosam maxime earum ratione dignissimos eos. Molestiae delectus doloremque, ad sed dolore doloribus ea quis molestias sint animi. Minima iure ex dolorem.</p>
+    </div>
+   
+    p {
+      text-align: start;
+    }
+
+    div {
+        background-color: red;
+    }
+
+    p:first-child{
+        background-color: black;
+        color: aqua;
+        text-align: start;
+    } 
+
+===>first p tag ல் உள்ள first paragraph யும் div க்குள் இருக்கும் அனைத்து first paragraph யும் எடுத்துக்கொண்டு color மாறி வரும்.
+
+                **************************************************
+
+(2)what is last child?
+
+===>last child ஆனது div tag க்கு மட்டும் பொருந்தும்.
+    எத்தனை div tag கொடுத்திருந்தாலும் ஒவ்வொரு div tag ன் last paragraph ஐ மட்டும் எடுத்துக்கொள்ளும்.
+    last child ஆனது p tag ஐ கணக்கில் எடுத்துக்கொள்ளாது.
+
+===>Example:
+
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laboriosam maxime earum ratione dignissimos eos. Molestiae delectus doloremque, ad sed dolore doloribus ea quis molestias sint animi. Minima iure ex dolorem.</p>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laboriosam maxime earum ratione dignissimos eos. Molestiae delectus doloremque, ad sed dolore doloribus ea quis molestias sint animi. Minima iure ex dolorem.</p>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laboriosam maxime earum ratione dignissimos eos. Molestiae delectus doloremque, ad sed dolore doloribus ea quis molestias sint animi. Minima iure ex dolorem.</p>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laboriosam maxime earum ratione dignissimos eos. Molestiae delectus doloremque, ad sed dolore doloribus ea quis molestias sint animi. Minima iure ex dolorem.</p>
+
+
+    <div>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laboriosam maxime earum ratione dignissimos eos. Molestiae delectus doloremque, ad sed dolore doloribus ea quis molestias sint animi. Minima iure ex dolorem.</p>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laboriosam maxime earum ratione dignissimos eos. Molestiae delectus doloremque, ad sed dolore doloribus ea quis molestias sint animi. Minima iure ex dolorem.</p>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laboriosam maxime earum ratione dignissimos eos. Molestiae delectus doloremque, ad sed dolore doloribus ea quis molestias sint animi. Minima iure ex dolorem.</p>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laboriosam maxime earum ratione dignissimos eos. Molestiae delectus doloremque, ad sed dolore doloribus ea quis molestias sint animi. Minima iure ex dolorem.</p>
+        <p>This is a last child</p>
+    </div>
+
+
+    <div>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laboriosam maxime earum ratione dignissimos eos. Molestiae delectus doloremque, ad sed dolore doloribus ea quis molestias sint animi. Minima iure ex dolorem.</p>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laboriosam maxime earum ratione dignissimos eos. Molestiae delectus doloremque, ad sed dolore doloribus ea quis molestias sint animi. Minima iure ex dolorem.</p>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laboriosam maxime earum ratione dignissimos eos. Molestiae delectus doloremque, ad sed dolore doloribus ea quis molestias sint animi. Minima iure ex dolorem.</p>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laboriosam maxime earum ratione dignissimos eos. Molestiae delectus doloremque, ad sed dolore doloribus ea quis molestias sint animi. Minima iure ex dolorem.</p>
+        <p>This is a last child</p>
+    </div>
+
+
+    <div>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laboriosam maxime earum ratione dignissimos eos. Molestiae delectus doloremque, ad sed dolore doloribus ea quis molestias sint animi. Minima iure ex dolorem.</p>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laboriosam maxime earum ratione dignissimos eos. Molestiae delectus doloremque, ad sed dolore doloribus ea quis molestias sint animi. Minima iure ex dolorem.</p>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laboriosam maxime earum ratione dignissimos eos. Molestiae delectus doloremque, ad sed dolore doloribus ea quis molestias sint animi. Minima iure ex dolorem.</p>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laboriosam maxime earum ratione dignissimos eos. Molestiae delectus doloremque, ad sed dolore doloribus ea quis molestias sint animi. Minima iure ex dolorem.</p>
+        <p>This is a last child</p>
+    </div>
+
+    p {
+      text-align: start;
+    }
+
+    div {
+        background-color: red;
+    }
+
+    p:last-child{
+        background-color: black;
+        color: aqua;
+        text-align: start;
+    } 
+
+===>div க்குள் இருக்கும் அனைத்து last paragraph யும் எடுத்துக்கொண்டு color மாறி வரும்.
+
+                **************************************************
+
+ (3)what is nth child?
+
+===>ஒரு p tag மற்றும் div ல் உள்ள குறிப்பிட்ட paragraph க்கு styling செய்ய பயன்படுகிறது.
+
+===>Example:
+
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laboriosam maxime earum ratione dignissimos eos. Molestiae delectus doloremque, ad sed dolore doloribus ea quis molestias sint animi. Minima iure ex dolorem.</p>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laboriosam maxime earum ratione dignissimos eos. Molestiae delectus doloremque, ad sed dolore doloribus ea quis molestias sint animi. Minima iure ex dolorem.</p>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laboriosam maxime earum ratione dignissimos eos. Molestiae delectus doloremque, ad sed dolore doloribus ea quis molestias sint animi. Minima iure ex dolorem.</p>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laboriosam maxime earum ratione dignissimos eos. Molestiae delectus doloremque, ad sed dolore doloribus ea quis molestias sint animi. Minima iure ex dolorem.</p>
+
+
+    <div>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laboriosam maxime earum ratione dignissimos eos. Molestiae delectus doloremque, ad sed dolore doloribus ea quis molestias sint animi. Minima iure ex dolorem.</p>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laboriosam maxime earum ratione dignissimos eos. Molestiae delectus doloremque, ad sed dolore doloribus ea quis molestias sint animi. Minima iure ex dolorem.</p>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laboriosam maxime earum ratione dignissimos eos. Molestiae delectus doloremque, ad sed dolore doloribus ea quis molestias sint animi. Minima iure ex dolorem.</p>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laboriosam maxime earum ratione dignissimos eos. Molestiae delectus doloremque, ad sed dolore doloribus ea quis molestias sint animi. Minima iure ex dolorem.</p>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laboriosam maxime earum ratione dignissimos eos. Molestiae delectus doloremque, ad sed dolore doloribus ea quis molestias sint animi. Minima iure ex dolorem.</p>
+    </div>
+
+
+    <div>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laboriosam maxime earum ratione dignissimos eos. Molestiae delectus doloremque, ad sed dolore doloribus ea quis molestias sint animi. Minima iure ex dolorem.</p>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laboriosam maxime earum ratione dignissimos eos. Molestiae delectus doloremque, ad sed dolore doloribus ea quis molestias sint animi. Minima iure ex dolorem.</p>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laboriosam maxime earum ratione dignissimos eos. Molestiae delectus doloremque, ad sed dolore doloribus ea quis molestias sint animi. Minima iure ex dolorem.</p>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laboriosam maxime earum ratione dignissimos eos. Molestiae delectus doloremque, ad sed dolore doloribus ea quis molestias sint animi. Minima iure ex dolorem.</p>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laboriosam maxime earum ratione dignissimos eos. Molestiae delectus doloremque, ad sed dolore doloribus ea quis molestias sint animi. Minima iure ex dolorem.</p>
+
+    </div>
+
+
+    <div>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laboriosam maxime earum ratione dignissimos eos. Molestiae delectus doloremque, ad sed dolore doloribus ea quis molestias sint animi. Minima iure ex dolorem.</p>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laboriosam maxime earum ratione dignissimos eos. Molestiae delectus doloremque, ad sed dolore doloribus ea quis molestias sint animi. Minima iure ex dolorem.</p>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laboriosam maxime earum ratione dignissimos eos. Molestiae delectus doloremque, ad sed dolore doloribus ea quis molestias sint animi. Minima iure ex dolorem.</p>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laboriosam maxime earum ratione dignissimos eos. Molestiae delectus doloremque, ad sed dolore doloribus ea quis molestias sint animi. Minima iure ex dolorem.</p>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laboriosam maxime earum ratione dignissimos eos. Molestiae delectus doloremque, ad sed dolore doloribus ea quis molestias sint animi. Minima iure ex dolorem.</p>
+    </div>
+
+    p {
+      text-align: start;
+    }
+
+    div {
+        background-color: red;
+    }
+
+    p:nth-child(1) {                   ===>p tag ல் குறிப்பிட்ட paragraph க்கு styling செய்ய
+        background-color: black;
+        color: aqua;
+        text-align: start;
+    }
+
+    div>p:nth-child(3) {               ===>div ல் உள்ள குறிப்பிட்ட paragraph க்கு styling செய்ய
+        background-color: black;
+        color: aqua;
+        text-align: start;
+    }  
+
+*************************************************************************************************************************
